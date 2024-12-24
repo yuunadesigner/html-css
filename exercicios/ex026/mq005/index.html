@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho ()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
@@ -24,11 +25,20 @@
     <main>
         <article>
                 <h2>Testando Media Query</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, provident in quis, tempore adipisci ad enim molestias error nam laboriosam, minima velit earum aliquam dolore amet illum repellendus iure soluta.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi aut nemo consectetur quo reiciendis sint pariatur earum officia accusantium deserunt ducimus voluptatum voluptatem autem nostrum facere, tenetur harum repudiandae.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore esse exercitationem veritatis, magnam earum, deleniti quae, cum nostrum ex mollitia ratione? Eaque veniam ea fugiat ex culpa maiores doloremque harum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, provident in quis, tempore adipisci ad enim molestias error nam laboriosam, minima velit earum aliquam dolore amet illum repellendus iure soluta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, dicta doloremque facere nemo neque at quasi facilis itaque, ut dolorem est suscipit ducimus pariatur doloribus quo ratione distinctio officia rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio eveniet mollitia voluptatum molestiae tempore asperiores possimus eaque placeat perferendis doloremque minima nam delectus, corporis animi pariatur dignissimos. Excepturi, ullam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem modi aut nemo consectetur quo reiciendis sint pariatur earum officia accusantium deserunt ducimus voluptatum voluptatem autem nostrum facere, tenetur harum repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dicta exercitationem ea vitae soluta, pariatur rem itaque quidem facilis possimus labore quae praesentium totam! Culpa quas dolorem suscipit alias eligendi!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore esse exercitationem veritatis, magnam earum, deleniti quae, cum nostrum ex mollitia ratione? Eaque veniam ea fugiat ex culpa maiores doloremque harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, dolor sit velit non nobis maiores tempore facilis voluptate obcaecati illo ipsa inventore, corrupti aspernatur ipsam temporibus totam officia molestias eius? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias sequi iure consequuntur eius ipsum tenetur, unde odio id impedit, blanditiis quis voluptatem nesciunt deserunt eos natus ab, tempora earum ullam?</p>
         </article>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
     <script>
         function clickMenu() {
             if(itens.style.display == 'block') {
