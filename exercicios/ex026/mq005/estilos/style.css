@@ -16,7 +16,7 @@ header > h1 {
     padding: 10px;
     text-align: center;
 }
-i#burguer {
+span#burguer {
     background-color: rgb(56, 56, 56);
     display: block;
     color: white;
@@ -24,7 +24,7 @@ i#burguer {
     padding: 10px;
     cursor: pointer;
 }
-i#burguer:hover {
+span#burguer:hover {
     background-color: white;
     color: black;
 }
